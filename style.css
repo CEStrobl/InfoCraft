@@ -1,0 +1,204 @@
+body {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+
+/* ~~~~~ NAVIGATION ~~~~~ */
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #22da50;
+    vertical-align: center;
+}
+
+.topnav brand {
+    float: left;
+    padding: 20px;
+    padding-left: 15px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 0px;
+}
+
+.topnav other {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Minecrafter';
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+  
+.topnav other:hover {
+    background-color: #e9d417;
+    transition: 0.5s;
+}   
+
+
+
+
+
+
+/* ~~~~~ INDEX ~~~~~ */
+
+.welcome {
+    overflow: auto;
+    background-color: #22da50;
+    color: white;
+    vertical-align: middle;
+    width: 100%s;
+    margin: 40px;
+    text-align: center;
+    padding: 60px;
+}
+
+.welcome maintxt {
+    font-family: 'Minecrafter';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.welcome img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+}
+
+.welcome p {
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family:"Minecrafter";
+    src:url("Minecrafter_Reg.eot?") 
+    format("eot"),
+    url("Minecrafter_Reg.woff") 
+    format("woff"),
+    url("Minecrafter_Reg.ttf") 
+    format("truetype"),
+    url("Minecrafter_Reg.svg#Minecrafter") 
+    format("svg");
+    font-weight:normal;font-style:normal;
+}
+
+
+
+/* ~~~~~ POTIONS ~~~~~~ */
+
+
+.accordion {
+    /* DECO */
+    background-color: #22da50;
+    border: none;
+    outline: none;
+
+    /* SIZE */
+    padding: 18px 0;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 30%;
+
+    /* FONT */
+    font-family: 'Minecrafter';
+    color: white;
+    font-size: 30px;
+
+    /* POS */
+    text-align: center;
+    vertical-align: middle;
+
+    /* IDK BROV */
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.accordion img {
+    float: left;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.panel {
+    width: 30%;
+    font-family: Tahoma;
+    padding: 0 0px 0px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 10px;
+}
+
+.panel img {
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+
+
+
+
+/* Button stuff */
+
+.button {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: transparent;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -60px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* button colors */
+
+.green {
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid #22da50;
+}
+  
+.green:hover {
+    background-color: #22da50;
+    color: white;
+}
