@@ -292,21 +292,23 @@ let checkHand = function(playerHand) {
     condition = "none"; //vice let condition = "none";
 	
 	if (playerHand == players[0]) {
-		
-		if (handTotal(playerHand) == 21) {
 
-        		condition = "win"
+        if (handTotal(playerHand) < 21){
 
-    		} else if (handTotal(playerHand) > 21) {
+        	condition = "play"
+            
+    	} else if (handTotal(playerHand) == 21) {
 
-        		condition = "bust"
+        	condition = "win"
 
-    		} else {
+    	} else if (handTotal(playerHand) > 21) {
 
-        		condition = "play"
-    		}
+        	condition = "bust"
+
+    	}
 
 	} else {
+
 		if (handTotal(playerHand) < 17) {
 
         		condition = "play"
