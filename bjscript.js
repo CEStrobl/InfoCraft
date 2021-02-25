@@ -290,23 +290,42 @@ let handTotal = function(playerHand) {
 let checkHand = function(playerHand) {
 
     condition = "none"; //vice let condition = "none";
+	
+	if (playerHand == players[0]) {
+		
+		if (handTotal(playerHand) == 21) {
+
+        		condition = "win"
+
+    		} else if (handTotal(playerHand) > 21) {
+
+        		condition = "bust"
+
+    		} else {
+
+        		condition = "play"
+    		}
+
+	} else {
+		if (handTotal(playerHand) < 17) {
+
+        		condition = "play"
+
+    		} else if (handTotal(playerHand) == 21) {
+
+        		condition = "win"
+
+    		} else if (handTotal(playerHand) > 21) {
+
+        		condition = "bust"
+
+    		} else {
+
+        		condition = "stay"
+    		}
+	}
     
-    if (handTotal(playerHand) < 17) {
-
-        condition = "play"
-
-    } else if (handTotal(playerHand) == 21) {
-
-        condition = "win"
-
-    } else if (handTotal(playerHand) > 21) {
-
-        condition = "bust"
-
-    } else {
-
-        condition = "stay"
-    }
+    
 
     return condition
 };
