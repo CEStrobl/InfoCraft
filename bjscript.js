@@ -328,7 +328,6 @@ let checkHand = function(playerHand) {
 	}
     
     
-    cl(playerHand + condition)
     return condition
 };
 
