@@ -296,7 +296,7 @@ let checkHand = function(playerHand) {
         if (handTotal(playerHand) < 21){
 
         	condition = "play"
-            
+
     	} else if (handTotal(playerHand) == 21) {
 
         	condition = "win"
@@ -328,9 +328,10 @@ let checkHand = function(playerHand) {
 	}
     
     
-cl(playerHand + condition)
+    cl(playerHand + condition)
     return condition
 };
+
 
 let draw = function(playerHand) { 
     
