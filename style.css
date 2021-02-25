@@ -38,6 +38,7 @@ body {
   
 .topnav other:hover {
     background-color: #e9d417;
+    padding: 5px;
     transition: 0.5s;
 }   
 
