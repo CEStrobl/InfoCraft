@@ -13,6 +13,8 @@ let trouble = 0
 
 var overlay = document.getElementById("overlay")
 
+cl("new one okay dokay")
+
 
 
 
