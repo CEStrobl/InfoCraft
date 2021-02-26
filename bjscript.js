@@ -326,7 +326,8 @@ let checkHand = function(playerHand) {
         		condition = "stay"
     		}
 	}
-    
+
+    cl(condition)
     
     return condition
 };
